@@ -1,0 +1,196 @@
+@font-face {
+    font-family: 'yk';
+    src: url('../fonts/Yekan-modified.woff') format('eot');
+    src: url('../fonts/Yekan-modified.ttf') format('truetype'),
+         url('../fonts/Yekan-modified.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'is';
+    src: url('../fonts/IRANSans-web.woff') format('eot');
+    src: url('../fonts/IRANSans-web.ttf') format('truetype'),
+         url('../fonts/Yekan-modified.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'xr';
+    src: url('../fonts/XeroSansBold.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body{
+    letter-spacing: 0;
+    line-height: 2;
+}
+#navigation{
+	direction:rtl;
+}
+#portfolio .item img.client{
+	position: absolute;
+    bottom: 0;
+    right: 20%;
+}
+#navigation li a{
+    font-family: xr;
+    font-size: 16px;
+}
+#navigation ul li a{
+    text-align: right;
+}
+#navigation ul li ul{
+    right: 190px;
+    left: auto;
+}
+.main-text{
+     margin-top:-65px;
+     font-family: xr;
+     font-size: 70px;
+}
+.slide-text li{
+    font-family: is;
+    font-size: 15px;
+}
+#portfolio .item .over h2{
+    font-family: xr;
+    font-size: 20px;
+}
+#portfolio .item .over h3{
+    font-family: is;
+    font-size: 14px;
+}
+#portfolio .more span{
+    display: none;
+}
+.page-title{
+    font-family: xr;
+    font-size: 40px;
+}
+.page-subtitle{
+    font-family: is;
+    font-size: 18px;
+}
+#about .facts span{
+    font-family: is;
+    font-size: 18px;
+}
+#team .member h4{
+    font-family: xr;
+    font-size: 18px;    
+}
+#team .info p{
+    font-family: is;
+    font-size: 8px;
+}
+#core .core-values li h4{
+    font-family: xr;
+    font-size: 20px;
+    margin: 20px 0 10px 0;
+}
+#core .core-values li p{
+    font-family: is;
+    font-size: 12px;
+}
+#services .touch h2{
+    font-family: xr;
+    font-size: 40px;
+}
+#services .touch a{
+    font-family: is;
+    font-size: 12px;
+}
+.owl-item strong, .owl-item em{
+    font-family: is;
+    font-size: 16px;
+}
+#contacts .text h2{
+    font-family: xr;
+    font-size: 35px;
+}
+#contacts .text .page-subtitle{
+    font-family: is;
+    font-size: 12px;
+}
+#contacts .get-in-touch input, #contacts .get-in-touch textarea,
+#zoomout, #zoomin, #contacts .get-in-touch button{
+    box-shadow: 12px 12px 0px rgba(50, 50, 50, 0.27);
+    text-align: right;
+    font-family: is;
+    font-size: 12px;
+}
+#contacts .get-in-touch .col{
+    margin-left: auto;
+    margin-right: 1.8003%;
+}
+#contacts .get-in-touch .col button{
+    text-align: center;
+}
+#go-top{
+    right: auto;
+    left: 0;
+}
+#contacts .marker-label{
+    width: 145px;
+}
+/*-----------------------------------Responsive------------------------------*/
+@media only screen and (min-width: 320px) and (max-width: 767px){
+    .prev{
+        top:50%;
+        display: none;
+    }
+    .next{
+        top:50%;
+        display: none;
+    }
+
+    .main-text, .page-title, #about .facts strong, .chart span, #services .touch h2,
+    #services, .testimonial .page-title{
+        font-size: 30px;
+    }
+    /**/
+    .slide-text li, .page-subtitle, #portfolio .item .over h3, #about .facts span,
+    #services, .testimonial .owl strong, #services .testimonial .owl em {
+        font-size: 12px;
+    }
+    /**/
+   .chart span{
+        left: 35%;
+   }
+   #core .core-values li .fa{
+        left: 42%;
+        top: 40px;
+   }
+   .pattern{
+    display: none;
+   }
+}
+@media only screen and (min-width: 768px) and (max-width: 1279px){
+    .main-text{
+        font-size: 60px;
+    }
+    .page-subtitle{
+        font-size: 16px;
+    }
+    #core .core-values li .fa{
+        left: 46%;
+    }
+    #portfolio .item img.client{
+    right: 30%;
+}
+}
+
+.pattern {background-image:url(../img/pattern.png);
+    position:absolute;
+    opacity:0.8;
+    left:0px;
+    top:0px;
+    right:0px;
+    bottom:0px;
+    width:100%;
+    height:100%;
+    z-index:1; 
+}
