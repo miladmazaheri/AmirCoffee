@@ -1,10 +1,169 @@
 ﻿@page
 @model IndexModel
 @{
+	Layout = "Shared/_MainLayout";
     ViewData["Title"] = "Home page";
 }
 
-<div class="text-center">
-    <h1 class="display-4">خوش آمدید</h1>
-    <p>درباره ما <a href="https://docs.microsoft.com/aspnet/core">میخوام یه برنامه خوب بنویسم</a>.</p>
+<!-- carousel -->
+<section id="carousel">
+
+	<span class="pattern"></span>
+
+	<div class="main-text">پیشرو و بی رقیب باشید</div>
+	<div class="sub-text">
+		<ul class="slide-text">
+			<li>ما برای پیشرفت شما تلاش میکنیم</li>
+			<li>تا در بین رقبای خود پیشتاز باشید</li>
+		</ul>
+	</div>
+
+	<div id="wrapper-slider">
+		<div id="controls">
+			<div class="prev"></div>
+			<div class="next"></div>
+		</div>
+	</div>
+
+	<a href="index.html#portfolio" class="scroll-btn anchor"></a>
+
+</section>
+
+<div id="portfolio-box">
+	<div class="spinner"></div>
+	<div class="inner"></div>
 </div>
+
+<section id="portfolio">
+	<div class="inner">
+		<ul id="rb-grid" class="list rb-grid">
+
+			<li>
+				<a class="item" href="#">
+					<img src="./img/portfolio/item-1.jpg" alt="">
+					<div class="over">
+						<h2 class="page-title">بهترینها را می سازیم<span class="border"></span></h2>
+						<h3 class="page-subtitle">
+							لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است
+						</h3>
+						<img class="client" src="./img/portfolio-clients/1w.png" alt="">
+					</div>
+				</a>
+			</li>
+
+			<li>
+				<a class="item" href="#">
+					<img src="./img/portfolio/item-2.jpg" alt="">
+					<div class="over">
+						<h2 class="page-title">بهترینها را می سازیم<span class="border"></span></h2>
+						<h3 class="page-subtitle">
+							لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است
+						</h3>
+						<img class="client" src="./img/portfolio-clients/2w.png" alt="">
+					</div>
+				</a>
+			</li>
+
+			<li>
+				<a class="item" href="#">
+					<img src="./img/portfolio/item-3.jpg" alt="">
+					<div class="over">
+						<h2 class="page-title">بهترینها را می سازیم<span class="border"></span></h2>
+						<h3 class="page-subtitle">
+							لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است
+						</h3>
+						<img class="client" src="./img/portfolio-clients/3w.png" alt="">
+					</div>
+				</a>
+			</li>
+
+			<li>
+				<a class="item" href="#">
+					<img src="./img/portfolio/item-4.jpg" alt="">
+					<div class="over">
+						<h2 class="page-title">بهترینها را می سازیم<span class="border"></span></h2>
+						<h3 class="page-subtitle">
+							لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است
+						</h3>
+						<img class="client" src="./img/portfolio-clients/4w.png" alt="">
+					</div>
+				</a>
+			</li>
+
+			<li>
+				<a class="item" href="#">
+					<img src="./img/portfolio/item-5.jpg" alt="">
+					<div class="over">
+						<h2 class="page-title">بهترینها را می سازیم<span class="border"></span></h2>
+						<h3 class="page-subtitle">
+							لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است
+						</h3>
+						<img class="client" src="./img/portfolio-clients/5w.png" alt="">
+					</div>
+				</a>
+			</li>
+
+			<li>
+				<a class="item" href="#">
+					<img src="./img/portfolio/item-6.jpg" alt="">
+					<div class="over">
+						<h2 class="page-title">بهترینها را می سازیم<span class="border"></span></h2>
+						<h3 class="page-subtitle">
+							لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است
+						</h3>
+						<img class="client" src="./img/portfolio-clients/6w.png" alt="">
+					</div>
+				</a>
+			</li>
+
+			<li>
+				<a class="item" href="#">
+					<img src="./img/portfolio/item-1.jpg" alt="">
+					<div class="over">
+						<h2 class="page-title">بهترینها را می سازیم<span class="border"></span></h2>
+						<h3 class="page-subtitle">
+							لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است
+						</h3>
+						<img class="client" src="./img/portfolio-clients/7w.png" alt="">
+					</div>
+				</a>
+			</li>
+
+			<li>
+				<a class="item" href="#">
+					<img src="./img/portfolio/item-8.jpg" alt="">
+					<div class="over">
+						<h2 class="page-title">بهترینها را می سازیم<span class="border"></span></h2>
+						<h3 class="page-subtitle">
+							لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است
+						</h3>
+						<img class="client" src="./img/portfolio-clients/8w.png" alt="">
+					</div>
+				</a>
+			</li>
+
+		</ul>
+
+		<a href="#" class="more rotate"><span class="rotate">+</span></a>
+	</div>
+</section>
+
+<section id="about">
+
+	<div class="gray">
+
+		<div class="wrap">
+
+			<h2 class="page-title">درباره ما<span class="border"></span></h2>
+			<h3 class="page-subtitle">ما برای پیشرفت شما تلاش میکنیم<br>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ است</h3>
+
+			<div class="screens">
+				<div class="left"><img src="img/about/left.png" alt=""></div>
+				<div class="right"><img src="img/about/right.png" alt=""></div>
+				<div class="center"><img src="img/about/center.png" alt=""></div>
+			</div>
+		</div>
+	</div>
+
+</section>
+

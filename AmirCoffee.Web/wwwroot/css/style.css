@@ -439,6 +439,10 @@ section.page {margin-top:60px;padding:40px 0;}
 #footer .social li a:hover {background-color:#fff;color:#000;}
 
 
+.menu-bg{
+	background-color : rgba(0,0,0,0.05)
+}
+
 
 
 
