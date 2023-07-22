@@ -1,0 +1,51 @@
+﻿@page
+@model AmirCoffee.Web.Pages.Management.Menu.EditModel
+
+@{
+    ViewData["Title"] = "Edit";
+    Layout = "~/Pages/Shared/_Layout.cshtml";
+}
+
+<h1>Edit</h1>
+
+<h4>Menu</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form method="post">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <input type="hidden" asp-for="Menu.Id" />
+            <div class="form-group">
+                <label asp-for="Menu.Title" class="control-label"></label>
+                <input asp-for="Menu.Title" class="form-control" />
+                <span asp-validation-for="Menu.Title" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Menu.Url" class="control-label"></label>
+                <input asp-for="Menu.Url" class="form-control" />
+                <span asp-validation-for="Menu.Url" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Menu.Order" class="control-label"></label>
+                <input asp-for="Menu.Order" class="form-control" />
+                <span asp-validation-for="Menu.Order" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Menu.Position" class="control-label"></label>
+                <select asp-for="Menu.Position" class="form-control"></select>
+                <span asp-validation-for="Menu.Position" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Save" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-page="./Index">Back to List</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}
