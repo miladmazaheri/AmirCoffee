@@ -38,110 +38,22 @@
 	<div class="inner">
 		<ul id="rb-grid" class="list rb-grid">
 
-			<li>
-				<a class="item" href="#">
-					<img src="./img/portfolio/item-1.jpg" alt="">
-					<div class="over">
-						<h2 class="page-title">بهترینها را می سازیم<span class="border"></span></h2>
-						<h3 class="page-subtitle">
-							لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است
-						</h3>
-						<img class="client" src="./img/portfolio-clients/1w.png" alt="">
-					</div>
-				</a>
-			</li>
-
-			<li>
-				<a class="item" href="#">
-					<img src="./img/portfolio/item-2.jpg" alt="">
-					<div class="over">
-						<h2 class="page-title">بهترینها را می سازیم<span class="border"></span></h2>
-						<h3 class="page-subtitle">
-							لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است
-						</h3>
-						<img class="client" src="./img/portfolio-clients/2w.png" alt="">
-					</div>
-				</a>
-			</li>
-
-			<li>
-				<a class="item" href="#">
-					<img src="./img/portfolio/item-3.jpg" alt="">
-					<div class="over">
-						<h2 class="page-title">بهترینها را می سازیم<span class="border"></span></h2>
-						<h3 class="page-subtitle">
-							لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است
-						</h3>
-						<img class="client" src="./img/portfolio-clients/3w.png" alt="">
-					</div>
-				</a>
-			</li>
-
-			<li>
-				<a class="item" href="#">
-					<img src="./img/portfolio/item-4.jpg" alt="">
-					<div class="over">
-						<h2 class="page-title">بهترینها را می سازیم<span class="border"></span></h2>
-						<h3 class="page-subtitle">
-							لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است
-						</h3>
-						<img class="client" src="./img/portfolio-clients/4w.png" alt="">
-					</div>
-				</a>
-			</li>
-
-			<li>
-				<a class="item" href="#">
-					<img src="./img/portfolio/item-5.jpg" alt="">
-					<div class="over">
-						<h2 class="page-title">بهترینها را می سازیم<span class="border"></span></h2>
-						<h3 class="page-subtitle">
-							لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است
-						</h3>
-						<img class="client" src="./img/portfolio-clients/5w.png" alt="">
-					</div>
-				</a>
-			</li>
-
-			<li>
-				<a class="item" href="#">
-					<img src="./img/portfolio/item-6.jpg" alt="">
-					<div class="over">
-						<h2 class="page-title">بهترینها را می سازیم<span class="border"></span></h2>
-						<h3 class="page-subtitle">
-							لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است
-						</h3>
-						<img class="client" src="./img/portfolio-clients/6w.png" alt="">
-					</div>
-				</a>
-			</li>
-
-			<li>
-				<a class="item" href="#">
-					<img src="./img/portfolio/item-1.jpg" alt="">
-					<div class="over">
-						<h2 class="page-title">بهترینها را می سازیم<span class="border"></span></h2>
-						<h3 class="page-subtitle">
-							لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است
-						</h3>
-						<img class="client" src="./img/portfolio-clients/7w.png" alt="">
-					</div>
-				</a>
-			</li>
-
-			<li>
-				<a class="item" href="#">
-					<img src="./img/portfolio/item-8.jpg" alt="">
-					<div class="over">
-						<h2 class="page-title">بهترینها را می سازیم<span class="border"></span></h2>
-						<h3 class="page-subtitle">
-							لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است
-						</h3>
-						<img class="client" src="./img/portfolio-clients/8w.png" alt="">
-					</div>
-				</a>
-			</li>
-
+			@foreach (var cr in Model.Carousels)
+			{
+				<li>
+					<a class="item" href="#">
+						<img src="@cr.ImageUrl" alt="">
+						<div class="over">
+							<h2 class="page-title">@cr.Title<span class="border"></span></h2>
+							<h3 class="page-subtitle">
+								@cr.SubTitle
+							</h3>
+							<img class="client" src="./img/portfolio-clients/1w.png" alt="">
+						</div>
+					</a>
+				</li>
+			}
+			
 		</ul>
 
 		<a href="#" class="more rotate"><span class="rotate">+</span></a>

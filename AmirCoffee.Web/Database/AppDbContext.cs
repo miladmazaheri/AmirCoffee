@@ -13,6 +13,7 @@ namespace AmirCoffee.Web.Database
 		}
 
 		public DbSet<Menu> Menus { get; set; }
+		public DbSet<Carousel> Carousels { get; set; }
 
 
 		protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)

@@ -1,0 +1,50 @@
+﻿@page
+@model AmirCoffee.Web.Pages.Management.Carousel.CreateModel
+
+@{
+    ViewData["Title"] = "Create";
+    Layout = "~/Pages/Shared/_Layout.cshtml";
+}
+
+<h1>Create</h1>
+
+<h4>Carousel</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form method="post">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="Carousel.Title" class="control-label"></label>
+                <input asp-for="Carousel.Title" class="form-control" />
+                <span asp-validation-for="Carousel.Title" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Carousel.SubTitle" class="control-label"></label>
+                <input asp-for="Carousel.SubTitle" class="form-control" />
+                <span asp-validation-for="Carousel.SubTitle" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Carousel.ImageUrl" class="control-label"></label>
+                <input asp-for="Carousel.ImageUrl" class="form-control" />
+                <span asp-validation-for="Carousel.ImageUrl" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Carousel.Order" class="control-label"></label>
+                <input asp-for="Carousel.Order" class="form-control" />
+                <span asp-validation-for="Carousel.Order" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Create" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-page="Index">Back to List</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}
